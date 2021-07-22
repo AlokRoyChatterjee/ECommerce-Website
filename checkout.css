@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+}
+#body-sections {
+    display: block;
+}
+#body-wrap {
+    display: none;
+}
+#header-wrap {
+    width: 98vw;
+    height: 80px;
+    box-shadow: 0px 10px 5px lightgray;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+#header-wrap h2 {
+    font-size: 40px;
+    font-family: Algerian;
+    margin: 10px 0px 0px 30px;
+}
+#header-wrap p {
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+#header-wrap input {
+    position: relative;
+    top: -5px;
+    width: 16vw;
+    padding: 10px 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    margin: 0px 20px 0px 0px;
+    outline: none;
+    background-color: lightgray;
+} 
+#head-left {
+    display: inline-flex;
+}
+#div-input {
+    float: right;
+}
+#cart {
+    position: relative;
+    font-size: 35px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+#cart-count {
+    position: absolute;
+    top: -18px;
+    left:20px;
+    font-size: 20px;
+    background-color: lightgreen;
+    border-radius: 50%;
+    z-index: 100;
+    width: 30px;
+    height: 25px;
+    text-align: center;
+    padding-top: 5px;
+} 
+#header-wrap img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-top: 20px;
+    float: right;
+}
+
+
+
+
+
+#check-wrap {
+    display: grid;
+    grid-template-columns: 50vw 40vw;
+    justify-content: stretch;
+    padding-bottom: 100px;
+}
+#products {
+    padding: 0px 0px 0px 100px;
+}
+#products h2 {
+    font-size: 40px;
+    font-weight: 400;
+}
+#products>h3 {
+    font-size: 25px;
+    font-weight: 450;
+    color: gray;
+}
+#products-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.prod {
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    height: 200px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border-bottom: 4px solid lightgray;
+    margin-top: 10px;
+}
+.prod-img {
+    height: 150px;
+    margin: auto 20px auto 20px;
+    border: 1px solid black;
+    width: 8vw;
+    border-radius: 5px;
+}
+.prod-head {
+    font-size: 25px;
+    font-weight: 550;
+}
+.prod-count {
+    font-size: 20px;
+}
+.prod-amount {
+    font-size: 20px;
+    color: darkgrey;
+}
+#subtotal {
+    height: 250px;
+    width: 40vw;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border-bottom: 4px solid lightgray;
+    margin-top: 175px;
+}
+#subtotal h2 {
+    font-size: 30px;
+    font-weight: 500;
+    padding: 20px 0px 0px 20px;
+}
+#subtotal p {
+    font-size: 20px;
+    padding: 0px 0px 20px 20px;
+}
+#subtotal input {
+    padding: 15px 25px;
+    border-radius: 10px;
+    background-color: rgb(24, 185, 96);
+    margin-left: 20px;
+    outline: none;
+}
+
+
+
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 98.7vw;
+    background-color: black;
+    color: white;
+    padding: 40px 0px 30px 0px; 
+}
+
+@media screen and (max-width: 320px){
+    #header-wrap h2 {
+        font-size: 30px;
+        margin-left: 10px;
+    }
+    #products {
+        padding-left: 0px;
+    }
+    #subtotal {
+        width: 90vw;
+    }
+    .prod {
+        width: 100vw;
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    #header-wrap h2 {
+        font-size: 30px;
+        margin-left: 10px;
+    }
+    .prod {
+        width: 90vw;
+        margin: 0px;
+    }
+    #products {
+        padding-left: 0px;
+    }
+    #subtotal {
+        width: 90vw;
+    }
+}
+@media screen and (max-width: 600px){
+    #div-input input {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px){
+    #footer {
+        font-size: 10px;
+        grid-template-columns: 15vw 15vw 15vw 15vw;
+        row-gap: 0px;
+    }
+}
+@media screen and (max-width: 930px){
+    .delnone {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    #check-wrap {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #total {
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 0px;
+    }
+    #subtotal {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

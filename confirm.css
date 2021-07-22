@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+}
+#body-sections {
+    display: block;
+}
+#body-wrap {
+    display: none;
+}
+#header-wrap {
+    width: 98vw;
+    height: 80px;
+    box-shadow: 0px 10px 5px lightgray;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+#header-wrap h2 {
+    font-size: 40px;
+    font-family: Algerian;
+    margin: 10px 0px 0px 30px;
+}
+#header-wrap p {
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+#header-wrap input {
+    position: relative;
+    top: -5px;
+    width: 16vw;
+    padding: 10px 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    margin: 0px 20px 0px 0px;
+    outline: none;
+    background-color: lightgray;
+} 
+#head-left {
+    display: inline-flex;
+}
+#div-input {
+    float: right;
+}
+#cart {
+    position: relative;
+    font-size: 35px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+#cart-count {
+    position: absolute;
+    top: -18px;
+    left:20px;
+    font-size: 20px;
+    background-color: lightgreen;
+    border-radius: 50%;
+    z-index: 100;
+    width: 30px;
+    height: 25px;
+    text-align: center;
+    padding-top: 5px;
+} 
+#header-wrap img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-top: 20px;
+    float: right;
+}
+
+#confirm {
+    text-align: center;
+}
+#icon {
+    margin-top: 70px;
+    font-size: 200px;
+    color: lightgreen;
+}
+#order-head {
+    font-size: 40px;
+    font-weight: 550;
+}
+#order-text {
+    font-size: 20px;
+    color: darkslategray;
+    margin-bottom: 100px;
+}
+
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 98.7vw;
+    background-color: black;
+    color: white;
+    padding: 40px 0px 30px 0px; 
+}
+
+
+@media screen and (max-width: 425px){
+    #header-wrap h2 {
+        font-size: 30px;
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 600px){
+    #div-input input {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px){
+    #footer {
+        font-size: 10px;
+        grid-template-columns: 15vw 15vw 15vw 15vw;
+        row-gap: 0px;
+    }
+}
+@media screen and (max-width: 930px){
+    .delnone {
+        display: none;
+    }
+}

@@ -1,0 +1,284 @@
+body {
+    margin: 0;
+}
+#body-sections {
+    display: block;
+}
+#body-wrap {
+    display: none;
+}
+#header-wrap {
+    width: 98vw;
+    height: 80px;
+    box-shadow: 0px 10px 5px lightgray;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+#header-wrap h2 {
+    font-size: 40px;
+    font-family: Algerian;
+    margin: 10px 0px 0px 30px;
+}
+#header-wrap p {
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+#header-wrap input {
+    position: relative;
+    top: -5px;
+    width: 16vw;
+    padding: 10px 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    margin: 0px 20px 0px 0px;
+    outline: none;
+    background-color: lightgray;
+} 
+#head-left {
+    display: inline-flex;
+}
+#div-input {
+    float: right;
+}
+#cart {
+    position: relative;
+    font-size: 35px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+#cart-count {
+    position: absolute;
+    top: -18px;
+    left:20px;
+    font-size: 20px;
+    background-color: lightgreen;
+    border-radius: 50%;
+    z-index: 100;
+    width: 30px;
+    height: 25px;
+    text-align: center;
+    padding-top: 5px;
+} 
+#header-wrap img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-top: 20px;
+    float: right;
+}
+
+/*CAROUSEL SECTION*/
+.slideshow {
+    position: relative;
+    margin-top: 60px;
+  }
+  .slides {
+    display: none;
+    width: 90vw;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .slides img {
+      width: 90vw;
+      height: 400px;
+  }
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .prev {
+      left: 5vw;
+  }
+  .next {
+    right: 5vw;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+/*CAROUSEEL SECTION ENDED*/
+
+
+
+
+
+/* CLOTHES SECTION*/
+#clothing {
+    padding: 150px 0px 0px 0px;
+}
+#clothing h2 {
+    margin-left: 4vw;
+}
+#clothes {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+}
+.imgur {
+    width: 17.5vw;
+    height: 500px;
+    background-color: whitesmoke;
+    border-bottom: 2px solid lightgray;
+}
+.imgur img {
+    width: 17.5vw;
+    height:300px;
+}
+.imgur p {
+    margin-left: 10px;
+}
+.cloth-text {
+    width: 17vw;
+    font-size: 20px;
+}
+.cloth-brand {
+    font-size: 18px;
+}
+.cloth-price {
+    color: rgba(255, 0, 0, 0.781);
+}
+.imgur:hover {
+    box-shadow: 0 0 10px lightgray;
+    cursor: pointer; 
+}
+
+
+
+
+
+/*ACCESSORIES SECTION*/
+#accessory {
+    padding: 150px 0px 150px 0px;
+}
+#accessory h2 {
+    margin-left: 4vw;
+}
+#access {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+
+/*FOOTER SECTION*/
+#footer {
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    justify-content: stretch;
+    column-gap: 30px;
+    width: 98vw;
+    background-color: black;
+    color: white;
+    padding: 40px 0px 0px 0px; 
+}
+#store {
+    padding-left: 30px;
+}
+#edyoda-img {
+    position: relative;
+    height: 50px;
+    width: 90px;
+    left: 80vw;
+    bottom: 100px;
+}
+@media screen and (max-width: 500px){
+    #access {
+        width: 90vw;
+    }
+    #edyoda-img {
+        height: 30px;
+        width: 60px;
+    }
+    #header-wrap h2 {
+        font-size: 30px;
+        margin-left: 10px;
+    }
+    #clothes {
+        display:flex;
+        flex-direction: column;
+    }
+    #access {
+        display:flex;
+        flex-direction: column;
+    }
+    .imgur {
+        width: 90vw;
+        margin-bottom: 10px;
+    }
+    .imgur img {
+        width: 90vw;
+    }
+    .cloth-text {
+        width: 80vw;
+        font-size: 30px;
+    }
+    #edyoda-img {
+        bottom: 30px;
+    }
+}
+@media screen and (max-width: 600px){
+    #div-input input {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px){
+    #footer {
+        font-size: 10px;
+        grid-template-columns: 15vw 15vw 15vw 15vw;
+        row-gap: 0px;
+    }
+    .cloth-text {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 930px){
+    .delnone {
+        display: none;
+    }
+}
