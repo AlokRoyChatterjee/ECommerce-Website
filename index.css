@@ -14,9 +14,10 @@ body {
     padding-top: 0px;
     margin-top: 0px;
 }
-#header-wrap h2 {
+
+#header-wrap a,h2 {
     font-size: 40px;
-    font-family: Algerian;
+    font-family: Arial;
     margin: 10px 0px 0px 30px;
 }
 #header-wrap p {
@@ -168,14 +169,14 @@ body {
 .imgur p {
     margin-left: 10px;
 }
-.cloth-text {
+.clothesname {
     width: 17vw;
     font-size: 20px;
 }
-.cloth-brand {
+.clothesitemname {
     font-size: 18px;
 }
-.cloth-price {
+.itemnumber {
     color: rgba(255, 0, 0, 0.781);
 }
 .imgur:hover {
@@ -208,7 +209,7 @@ body {
 
 /*FOOTER SECTION*/
 #footer {
-    display: grid;
+    display: flex;
     grid-template-columns: 20vw 20vw 20vw 20vw;
     justify-content: stretch;
     column-gap: 30px;
@@ -254,7 +255,7 @@ body {
     .imgur img {
         width: 90vw;
     }
-    .cloth-text {
+    .clothesname {
         width: 80vw;
         font-size: 30px;
     }
@@ -267,13 +268,13 @@ body {
         display: none;
     }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 780px){
     #footer {
         font-size: 10px;
         grid-template-columns: 15vw 15vw 15vw 15vw;
         row-gap: 0px;
     }
-    .cloth-text {
+    .clothesname {
         font-size: 15px;
     }
 }

@@ -15,7 +15,7 @@ body {
 }
 #header-wrap h2 {
     font-size: 40px;
-    font-family: Algerian;
+    font-family: Arial;
     margin: 10px 0px 0px 30px;
 }
 #header-wrap p {
@@ -127,8 +127,8 @@ body {
     flex-direction: row;
     justify-content: space-around;
     width: 98.7vw;
-    background-color: black;
-    color: white;
+    background-color:yellow;
+    color: blue;
     padding: 40px 0px 30px 0px; 
 }
 

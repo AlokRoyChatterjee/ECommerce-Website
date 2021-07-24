@@ -1,11 +1,11 @@
-//CAROUSEL SECTION (DO IT LATER)
+
 var slideIndex = 1;
 showSlides(slideIndex);
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 function currentSlide(n) {
-  showSlides(slideIndex = n);                    //PROBLEMATIC
+  showSlides(slideIndex = n);                   
 }
 function showSlides(n) {
   var i;
@@ -22,10 +22,10 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-//CAROUSEL SECTION END
 
 
-//RENDERING TEXT AND IMAGES FROM API
+
+
 var totaly = JSON.parse(localStorage.getItem('total'));
 var cartCount = document.getElementById('cart-count');
 if(totaly == null){
@@ -35,18 +35,18 @@ if(totaly == null){
 }  
 
 var http = new XMLHttpRequest();
-http.open('GET','https://5d76bf96515d1a0014085cf9.mockapi.io/product',true);
+http.open('GET','https://5d76bf96515d1a0014085cf9.mockapi.io/product',true);  //getting products info from api
 http.onload = function() {
     var data = JSON.parse(this.response);
     for(var i=1;i<=10;i++){
         var imgu = document.querySelector('#i'+i+' img');
-        var ct = document.querySelector('#i'+i+' .cloth-text');
-        var cb = document.querySelector('#i'+i+' .cloth-brand');
-        var cp = document.querySelector('#i'+i+' .cloth-price');
+        var ct = document.querySelector('#i'+i+' .clothesname');
+        var cb = document.querySelector('#i'+i+' .clothesitemname');
+        var cp = document.querySelector('#i'+i+' .itemnumber');
         imgu.src = data[i-1].preview;
         ct.innerHTML = data[i-1].name;
         cb.innerHTML = data[i-1].brand;
-        cp.innerHTML = "Rs. " + data[i-1].price;
+        cp.innerHTML =  data[i-1].price+" dollars";
     }
 }
 http.send();
