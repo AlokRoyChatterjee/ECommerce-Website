@@ -61,10 +61,7 @@ for(var i=0;i<10;i++){
         idarr.splice(0,1);
         var id = idarr.join('');
         localStorage.setItem('idass', JSON.stringify(id));
-        window.location.assign("iteminfo.html");
+        window.location.assign("items.html");
     });
 }
-var cart = document.getElementById('cart');
-cart.addEventListener('click',function(){
-    window.location.assign("checkout.html");
-});
+
