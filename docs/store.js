@@ -57,14 +57,11 @@ var imgury = document.querySelectorAll('.imgur');
 for(var i=0;i<10;i++){
     imgury[i].addEventListener('click',function(){
         
-        var idarr = this.id.split('');
+        var idarr = this.id.split(' ');
         idarr.splice(0,1);
         var id = idarr.join('');
         localStorage.setItem('idass', JSON.stringify(id));
-        window.location.assign("product_details.html");
+        window.location.assign("iteminfo.html");
     });
 }
-var cart = document.getElementById('cart');
-cart.addEventListener('click',function(){
-    window.location.assign("checkout.html");
-});
+
