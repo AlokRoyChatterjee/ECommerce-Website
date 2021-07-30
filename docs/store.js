@@ -57,7 +57,7 @@ var imgury = document.querySelectorAll('.imgur');
 for(var i=0;i<10;i++){
     imgury[i].addEventListener('click',function(){
         
-        var idarr = this.id.split(' ');
+        var idarr = this.id.split('');
         idarr.splice(0,1);
         var id = idarr.join('');
         localStorage.setItem('idass', JSON.stringify(id));
