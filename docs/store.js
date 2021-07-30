@@ -23,17 +23,6 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-
-
-
-var totaly = JSON.parse(localStorage.getItem('total'));
-var cartCount = document.getElementById('cart-count');
-if(totaly == null){
-    cartCount.innerHTML = 0;
-}else{
-    cartCount.innerHTML = parseInt(totaly);
-}  
-
 var http = new XMLHttpRequest();
 http.open('GET','https://5d76bf96515d1a0014085cf9.mockapi.io/product',true);  //getting products info from api
 http.onload = function() {
