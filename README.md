@@ -1,3 +1,3 @@
 ### Developed ECommerce Website using HTML, CSS, and JavaScript ###
 ### Sample website images is in .jpg files above ###
-![Image of Yaktocat](homepage.JPG)
+(homepage.JPG)
