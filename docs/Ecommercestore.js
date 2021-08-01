@@ -51,7 +51,7 @@ for(var i=0;i<10;i++){
         idarr.splice(0,1);
         var id = idarr.join('');
         localStorage.setItem('idarr', JSON.stringify(id));
-        window.location.assign("product_details.html");
+        window.location.assign("itemsinfo.html");
     });
 }
 var cart = document.getElementById('cart');
