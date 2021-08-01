@@ -50,7 +50,7 @@ for(var i=0;i<10;i++){
         var idarr = this.id.split('');
         idarr.splice(0,1);
         var id = idarr.join('');
-        localStorage.setItem('idarr', JSON.stringify(id));
+        localStorage.setItem('id', JSON.stringify(id));
         window.location.assign("itemsinfo.html");
     });
 }
